@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="icon" href="thumbnail.png">
+    <title>Higlight Languages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="highlight.css">
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Aug 7, 2020 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "Hooray!! Highlight has been Launched!";
+        }
+      }, 1000);
+    </script>
+
+</head>
+
+  <body>
+    <nav>
+      <div class ="logo">
+        <a href="index.html"><img src="FINAL logo clear-01.png" title="Highlight Logo" alt="Logo"></a>
+      </div>
+      <ul class= "nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class ="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <script src= "nav.js"></script>
+
+    <div class= "hero-image">
+      <div class= "hero-text">
+        <div class = "logohome">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a href="index.html"><img src="FINAL logo clear-01.png" title="Highlight Logo" alt="Logo"></a>
+        </div>
+        <h1 style="font-size: 50px"> Welcome to Highlight Languages!</h1>
+        <h2 style="font-size: 30px"> Est. 2020</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <div class ="timer">
+        <p id="timer" style= "background-color: #FCD772;" style="border-radius: 150px;"> &nbsp; &nbsp; Countdown!</p>
+      </div>
+  
+    </div>
+
+    <div class="hero-image2" >
+      <div class="hero-text2">
+        <div class="circular--landscape">
+          <img class="lightbulb" src ="lightbulbidea.jpeg"  alt="lightbulb idea">
+        </div>
+
+        <p> We are a young and innovative team of entrepreneurs with a goal of 
+        revolutionizing the way language is taught throughout the globe. 
+        Highlight provides organizations and individuals a comprehensive 
+        way to learn a language and the subtleties of its culture to better connect with others. 
+        Through augmented reality and hand-tailored study sets, we quickly 
+        bring you up to speed and fluency for any situation that you may experience.
+        </p>
+
+      </div>
+    </div>
+
+    <div class= "custom-image">
+
+    <div class= "custom-list">
+      <div class="quote">
+        </br>
+        <p style= "font-family: bold">"A different language is a different vision of life."</p>
+        <p>Federico Fellini</p>
+
+        </br>
+        </br>
+        <h3>Benefits of learning a language - </h3>
+        </br>
+        <ol>
+          <li>Improve patient to physician trust and communication</li>
+          </br>
+          <li>Enhance customer service and establish rapport</li>
+          </br>
+          <li>Reduce wasted time from having to wait for translators or weaving through miscommunications</li>
+          </br>
+        </ol>
+      </div> 
+    </div>
+
+    <!-- FOOTER START -->
+    <footer>  
+      <div class="footer">
+        <div class="contain">
+          <div class="col">
+            <h1>Company</h1>
+            <ul>
+            <li>About</li>
+            <li>Mission</li>
+            <li>Get in touch</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Products</h1>
+            <ul>
+              <li>Highlight Mobile</li>
+              <li>Highlight iOS</li>
+              <li>Highlight Android</li>
+              <li>Highlight Desktop</li>
+              <li>Merchindise</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Resources</h1>
+            <ul>
+              <li>Newsletter</li>
+              <li>Redeem code</li>
+              <li>Blog</li>
+              <li>Site map</li>
+              <li>Sales</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Support</h1>
+            <ul>
+              <li>Contact us</li>
+              <li>Live Chat</li>
+              <li>Open ticket</li>
+            </ul>
+          </div>
+
+          <!--  <div class="col social">
+          <h1>Social</h1>
+          <ul>
+          <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+          </ul>
+          </div>-->
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer> 
+    <!-- END OF FOOTER -->
+  </body>
+</html>
